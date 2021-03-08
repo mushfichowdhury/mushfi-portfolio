@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { Airplayvideo, Youtube, Github } from '@icons-pack/react-simple-icons';
 import theme from '../theme';
-const { gunmetal, phthalogreen, timberwolf, culturedwhite, mintcream } = theme.colors;
+const { gunmetal, phthalogreen, timberwolf, culturedwhite } = theme.colors;
 
 export const Project = ({
   image,
