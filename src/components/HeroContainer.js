@@ -2,7 +2,7 @@ import { Flex, useColorMode } from '@chakra-ui/react';
 import theme from '../theme';
 const { gunmetal, phthalogreen, timberwolf, culturedwhite, mintcream } = theme.colors;
 
-export const Container = (props) => {
+export const HeroContainer = (props) => {
   const { colorMode } = useColorMode()
 
   const bgColor = { light: timberwolf, dark: phthalogreen }
