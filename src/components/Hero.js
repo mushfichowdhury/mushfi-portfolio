@@ -12,15 +12,17 @@ export const Hero = ({ title, subtitle }) => (
     height="80vh"
   >
     <Grid templateRows="repeat(3, 1fr)" >
-      <Heading as="h1" className="animate__animated animate__fadeInUp" fontSize="7.5vw" textShadow="2px 2px #292F36">
+      <Heading as="h1" data-aos="fade-right" className="animate__animated animate__fadeInUp" fontSize="7.5vw">
         {title}
       </Heading>
       <Flex
         justifyContent="center"
-        alignItems="center">
+        alignItems="center"
+      >
       <Stack
         direction={["column", "row"]}
-        justifyContent="space-between"
+          justifyContent="space-between"
+          data-aos="fade-right"
       >
         <Text fontSize="1.5vw">
           <Icon as={ChevronRightIcon} />
