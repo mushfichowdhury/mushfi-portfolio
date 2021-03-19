@@ -2,6 +2,7 @@ import { Flex, Spacer, Heading, Grid, Stack, Text, Icon } from '@chakra-ui/react
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Links } from './Links'
 import theme from '../theme';
+import { DarkModeSwitch } from './DarkModeSwitch';
 const { gunmetal, phthalogreen, timberwolf, culturedwhite, mintcream } = theme.colors;
 
 export const Hero = ({ title, subtitle }) => (
@@ -11,6 +12,7 @@ export const Hero = ({ title, subtitle }) => (
     alignItems="center"
     height="80vh"
   >
+    <DarkModeSwitch/>
     <Grid templateRows="repeat(3, 1fr)" >
       <Heading as="h1" data-aos="fade-right" className="animate__animated animate__fadeInUp" fontSize="7.5vw">
         {title}

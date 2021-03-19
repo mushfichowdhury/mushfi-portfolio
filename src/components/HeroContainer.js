@@ -1,5 +1,6 @@
 import { Flex, useColorMode } from '@chakra-ui/react';
 import theme from '../theme';
+import { Hero } from './Hero';
 const { gunmetal, phthalogreen, timberwolf, culturedwhite, mintcream } = theme.colors;
 
 export const HeroContainer = (props) => {
@@ -17,6 +18,8 @@ export const HeroContainer = (props) => {
       headingColor={headingColor[colorMode]}
       textColor={textColor[colorMode]}
       {...props}
-    />
+    >
+      <Hero/>
+    </Flex>
   )
 }
