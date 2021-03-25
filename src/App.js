@@ -72,7 +72,8 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      {window.innerWidth > 850
+        ? <Header /> : null}
       <Canvas
         concurrent
         colorManagement
